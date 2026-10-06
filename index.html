@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Luxury Car | Chofer privado en Miami-Dade y Broward</title>
+<meta name="description" content="Chofer privado y traslados al aeropuerto en Miami-Dade y Broward. Tarifas fijas, servicio por hora, bodas y transporte corporativo. Private chauffeur service in Miami-Dade and Broward.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230A0A0A' stroke='%23B89B5E' stroke-width='3'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='20' fill='%23B89B5E' text-anchor='middle'%3EBLC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0A0A0A; --panel:#151618; --line:#2B2C2E; --cream:#ECE8DF; --cream-line:#BDB7A9;
+    --cream-panel:#F7F5F0; --text:#F2EFE9; --muted:#A9A59C; --text-dark:#0A0A0A; --muted-dark:#4A4740;
+    --gold:#B89B5E;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ink);color:var(--text);font-family:'Source Sans 3',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:'Montserrat',sans-serif;font-weight:600;margin:0}
+  a{color:inherit;text-decoration:none}
+  html{scroll-behavior:smooth}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--text);outline-offset:2px}
+
+  [data-lang-block="en"]{display:none}
+  html[data-lang="en"] [data-lang-block="en"]{display:block}
+  html[data-lang="en"] [data-lang-block="es"]{display:none}
+  html[data-lang="en"] span[data-lang-block="en"],
+  html[data-lang="en"] a[data-lang-block="en"]{display:inline}
+  span[data-lang-block="en"], a[data-lang-block="en"]{display:none}
+  html[data-lang="en"] span[data-lang-block="es"],
+  html[data-lang="en"] a[data-lang-block="es"]{display:none}
+
+  header{position:sticky;top:0;z-index:20;background:rgba(10,10,10,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .headrow{height:76px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .mono{width:42px;height:42px;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-weight:700;font-size:13px;letter-spacing:.06em;color:var(--gold);flex-shrink:0}
+  .wordmark{font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px}
+  nav{display:flex;align-items:center;gap:24px}
+  nav a.navlink{font-size:15px;font-weight:500}
+  .langbtns{display:flex;gap:4px}
+  .langbtn{min-width:40px;min-height:40px;border:1px solid #4A4B4E;background:transparent;color:var(--text);font:inherit;font-weight:600;font-size:14px;border-radius:4px;cursor:pointer}
+  .langbtn[aria-pressed="true"]{background:var(--text);color:var(--ink);border-color:var(--text)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 22px;border-radius:4px;font-weight:600;font-size:15px;cursor:pointer;border:none;font-family:inherit}
+  .btn-gold{background:var(--gold);color:var(--ink)}
+  .btn-gold:hover{filter:brightness(1.1)}
+  .btn-outline{border:1px solid #5A5850;color:var(--text);background:transparent}
+  .btn-outline:hover{background:#1c1d1f}
+  .navmobile{display:none}
+
+  section{padding:96px 0}
+  .hero{padding-top:64px;padding-bottom:72px}
+  .herogrid{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center}
+  .hero h1{font-size:58px;line-height:1.08;letter-spacing:-.01em}
+  .hero p.sub{margin:22px 0 0;max-width:480px;font-size:18px;line-height:1.6;color:var(--muted)}
+  .ctarow{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+
+  .ratecard{box-sizing:border-box;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:36px}
+  .ratecard h2{font-size:30px}
+  .ratecard .sub{margin:6px 0 18px;font-size:14px;color:var(--muted);line-height:1.5}
+  .fareline{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 0;border-top:1px solid var(--line)}
+  .fareline .from{font-size:17px;font-weight:600}
+  .fareline .to{font-size:14px;color:var(--muted);margin-top:2px}
+  .fareprice{font-family:'Montserrat',sans-serif;font-weight:700;font-size:38px;color:var(--gold);white-space:nowrap}
+  .foot-note{margin:10px 0 0;padding-top:18px;border-top:1px solid var(--line);font-size:14px;line-height:1.5;color:var(--muted)}
+
+  .trustbar{background:var(--ink);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:0}
+  .trustgrid{display:grid;grid-template-columns:repeat(3,1fr)}
+  .trustgrid div{padding:26px 20px;text-align:center;font-size:16px;font-weight:500}
+
+  .section-cream{background:var(--cream);color:var(--text-dark)}
+  .section-title{font-size:44px;line-height:1.1;max-width:560px;margin-bottom:44px}
+  .svcrow{display:grid;grid-template-columns:300px 1fr 190px;column-gap:32px;align-items:baseline;padding:28px 0;border-top:1px solid var(--cream-line)}
+  .svcwrap{border-bottom:1px solid var(--cream-line)}
+  .svcrow h3{font-size:26px;line-height:1.15}
+  .svcrow p{margin:0;font-size:16px;line-height:1.6;color:var(--muted-dark)}
+  .svctag{text-align:right}
+  .svctag .amt{font-family:'Montserrat',sans-serif;font-weight:600;font-size:22px}
+  .svctag .note{font-size:13px;color:var(--muted-dark);margin-top:3px}
+
+  .fleetgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  .fleetcard .photo{height:230px;border-radius:6px;overflow:hidden;background:var(--panel);border:1px solid var(--line);display:flex;align-items:center;justify-content:center}
+  .fleetcard .photo img{width:100%;height:100%;object-fit:cover}
+  .fleetcard .photo.placeholder{border-style:dashed;font-size:14px;color:var(--muted);text-align:center;padding:20px}
+  .fleetcard h3{margin:20px 0 6px;font-size:26px}
+  .fleetcard p{margin:0;font-size:15px;line-height:1.6;color:var(--muted)}
+
+  .bookgrid{display:grid;grid-template-columns:360px 1fr;gap:72px;align-items:start}
+  .bookintro h2{font-size:44px;line-height:1.1}
+  .bookintro p{margin:20px 0 0;font-size:17px;line-height:1.6;color:var(--muted-dark)}
+  .walabel{margin:36px 0 4px;font-size:14px;color:var(--muted-dark)}
+  .wanum{font-family:'Montserrat',sans-serif;font-weight:600;font-size:32px;color:var(--text-dark)}
+  .langnote{margin:14px 0 0;font-size:15px;color:var(--muted-dark)}
+
+  .formcard{box-sizing:border-box;background:var(--cream-panel);border:1px solid var(--cream-line);border-radius:6px;padding:32px;display:flex;flex-direction:column;gap:24px}
+  .flabel{font-size:14px;font-weight:600;margin-bottom:9px}
+  .chiprow{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{min-height:44px;padding:9px 16px;border:1px solid var(--text-dark);border-radius:4px;background:transparent;color:var(--text-dark);font:inherit;font-size:15px;font-weight:500;cursor:pointer}
+  .chip.on{background:var(--text-dark);color:var(--text)}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .field{box-sizing:border-box;width:100%;min-height:46px;padding:0 13px;border:1px solid #8C8676;border-radius:4px;background:#fff;color:var(--text-dark);font:inherit;font-size:15px}
+  textarea.field{padding:11px 13px;min-height:auto;resize:vertical}
+  .stepper{display:flex;align-items:center;gap:14px}
+  .stepbtn{width:44px;height:44px;border:1px solid var(--text-dark);border-radius:4px;background:transparent;font-size:20px;cursor:pointer}
+  .stepval{min-width:50px;text-align:center;font-family:'Montserrat',sans-serif;font-weight:600;font-size:28px}
+  .sumbox{background:var(--ink);color:var(--text);border-radius:4px;padding:20px 24px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+  .sumbox .lbl{font-size:14px;font-weight:600}
+  .sumbox .note{font-size:13px;color:var(--muted);margin-top:3px}
+  .sumbox .amt{font-family:'Montserrat',sans-serif;font-weight:700;font-size:36px;color:var(--gold);white-space:nowrap}
+  .submitbtn{width:100%;min-height:52px;font-size:16px}
+
+  footer{background:var(--ink);border-top:1px solid var(--line);padding:56px 0}
+  .footgrid{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap}
+  .footinfo{font-size:15px;line-height:1.8;color:var(--muted)}
+  .rights{margin-top:18px;font-size:13px;color:var(--muted)}
+
+  @media (max-width: 880px){
+    nav .navlink, nav .btn-outline-nav{display:none}
+    .hero h1{font-size:38px}
+    .herogrid{grid-template-columns:1fr;gap:36px}
+    .section-title{font-size:32px}
+    .svcrow{grid-template-columns:1fr;row-gap:8px}
+    .svctag{text-align:left}
+    .fleetgrid{grid-template-columns:1fr}
+    .bookgrid{grid-template-columns:1fr;gap:36px}
+    .twocol{grid-template-columns:1fr}
+    section{padding:60px 0}
+    .trustgrid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap headrow">
+    <a href="#top" class="brand" aria-label="Black Luxury Car">
+      <div class="mono">BLC</div>
+      <div class="wordmark">Black Luxury Car</div>
+    </a>
+    <nav>
+      <a class="navlink" href="#tarifas" data-lang-block="es">Tarifas</a>
+      <a class="navlink" href="#tarifas" data-lang-block="en">Rates</a>
+      <a class="navlink" href="#servicios" data-lang-block="es">Servicios</a>
+      <a class="navlink" href="#servicios" data-lang-block="en">Services</a>
+      <a class="navlink" href="#flota" data-lang-block="es">Flota</a>
+      <a class="navlink" href="#flota" data-lang-block="en">Fleet</a>
+      <div class="langbtns" role="group" aria-label="Idioma / Language">
+        <button class="langbtn" id="btn-es" onclick="setLang('es')" aria-pressed="true">ES</button>
+        <button class="langbtn" id="btn-en" onclick="setLang('en')" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn-gold" href="#reservar" data-lang-block="es">Reservar</a>
+      <a class="btn btn-gold" href="#reservar" data-lang-block="en">Book</a>
+    </nav>
+  </div>
+</header>
+
+<div id="top"></div>
+
+<section class="hero">
+  <div class="wrap herogrid">
+    <div>
+      <h1 data-lang-block="es">Chofer privado en Miami y Broward, a tarifa fija.</h1>
+      <h1 data-lang-block="en">Private chauffeur in Miami and Broward, at fixed rates.</h1>
+      <p class="sub" data-lang-block="es">Traslados a los aeropuertos de Miami y Fort Lauderdale con precio cerrado, además de servicio por hora, bodas y transporte corporativo.</p>
+      <p class="sub" data-lang-block="en">Rides to Miami and Fort Lauderdale airports at a set price, plus hourly service, weddings and corporate transportation.</p>
+      <div class="ctarow">
+        <a class="btn btn-gold" href="#reservar" data-lang-block="es">Reservar por WhatsApp</a>
+        <a class="btn btn-gold" href="#reservar" data-lang-block="en">Book on WhatsApp</a>
+        <a class="btn btn-outline" href="#tarifas" data-lang-block="es">Ver tarifas</a>
+        <a class="btn btn-outline" href="#tarifas" data-lang-block="en">See rates</a>
+      </div>
+    </div>
+
+    <div class="ratecard" id="tarifas">
+      <h2 data-lang-block="es">Tarifas fijas</h2>
+      <h2 data-lang-block="en">Fixed rates</h2>
+      <p class="sub" data-lang-block="es">Precio por trayecto. Peajes incluidos, propina no incluida. El regreso cuesta lo mismo.</p>
+      <p class="sub" data-lang-block="en">Price per trip. Tolls included, tip not included. The return trip costs the same.</p>
+
+      <div class="fareline">
+        <div><div class="from">Key Biscayne</div><div class="to" data-lang-block="es">Aeropuerto de Miami (MIA)</div><div class="to" data-lang-block="en">Miami Airport (MIA)</div></div>
+        <div class="fareprice">$90</div>
+      </div>
+      <div class="fareline">
+        <div><div class="from">Key Biscayne</div><div class="to" data-lang-block="es">Aeropuerto de Fort Lauderdale (FLL)</div><div class="to" data-lang-block="en">Fort Lauderdale Airport (FLL)</div></div>
+        <div class="fareprice">$150</div>
+      </div>
+      <div class="fareline">
+        <div><div class="from" data-lang-block="es">Brickell y Miami</div><div class="from" data-lang-block="en">Brickell &amp; Miami</div><div class="to" data-lang-block="es">Aeropuerto de Miami (MIA)</div><div class="to" data-lang-block="en">Miami Airport (MIA)</div></div>
+        <div class="fareprice">$80</div>
+      </div>
+      <div class="fareline">
+        <div><div class="from" data-lang-block="es">Brickell y Miami</div><div class="from" data-lang-block="en">Brickell &amp; Miami</div><div class="to" data-lang-block="es">Aeropuerto de Fort Lauderdale (FLL)</div><div class="to" data-lang-block="en">Fort Lauderdale Airport (FLL)</div></div>
+        <div class="fareprice">$140</div>
+      </div>
+      <div class="fareline">
+        <div><div class="from" data-lang-block="es">Servicio por hora</div><div class="from" data-lang-block="en">Hourly service</div><div class="to" data-lang-block="es">Mínimo 3 horas</div><div class="to" data-lang-block="en">3-hour minimum</div></div>
+        <div class="fareprice">$80/h</div>
+      </div>
+      <p class="foot-note" data-lang-block="es">¿Otro destino? Pida su cotización por WhatsApp.</p>
+      <p class="foot-note" data-lang-block="en">Another destination? Ask for a quote on WhatsApp.</p>
+    </div>
+  </div>
+</section>
+
+<div class="trustbar">
+  <div class="wrap trustgrid">
+    <div data-lang-block="es">Licenciados y asegurados</div>
+    <div data-lang-block="en">Licensed and insured</div>
+    <div data-lang-block="es">Atención en español e inglés</div>
+    <div data-lang-block="en">Service in English and Spanish</div>
+    <div data-lang-block="es">Miami-Dade y Broward</div>
+    <div data-lang-block="en">Miami-Dade and Broward</div>
+  </div>
+</div>
+
+<section class="section-cream" id="servicios">
+  <div class="wrap">
+    <h2 class="section-title" data-lang-block="es">Un servicio para cada ocasión</h2>
+    <h2 class="section-title" data-lang-block="en">A service for every occasion</h2>
+
+    <div class="svcwrap">
+      <div class="svcrow">
+        <h3 data-lang-block="es">Traslados a aeropuertos</h3>
+        <h3 data-lang-block="en">Airport transfers</h3>
+        <p data-lang-block="es">Recogida y entrega en Miami (MIA) y Fort Lauderdale (FLL) con tarifa fija desde Key Biscayne, Brickell y Miami.</p>
+        <p data-lang-block="en">Pickup and drop-off at Miami (MIA) and Fort Lauderdale (FLL) at fixed rates from Key Biscayne, Brickell and Miami.</p>
+        <div class="svctag"><div class="amt" data-lang-block="es">Desde $80</div><div class="amt" data-lang-block="en">From $80</div><div class="note" data-lang-block="es">Tarifa fija</div><div class="note" data-lang-block="en">Fixed rate</div></div>
+      </div>
+      <div class="svcrow">
+        <h3 data-lang-block="es">Servicio por hora</h3>
+        <h3 data-lang-block="en">Hourly service</h3>
+        <p data-lang-block="es">Chofer y vehículo a su disposición para reuniones, compras, cenas o recorridos.</p>
+        <p data-lang-block="en">A driver and vehicle at your disposal for meetings, shopping, dinners or sightseeing.</p>
+        <div class="svctag"><div class="amt">$80/h</div><div class="note" data-lang-block="es">Mínimo 3 horas</div><div class="note" data-lang-block="en">3-hour minimum</div></div>
+      </div>
+      <div class="svcrow">
+        <h3 data-lang-block="es">Ejecutivos y corporativo</h3>
+        <h3 data-lang-block="en">Executive and corporate</h3>
+        <p data-lang-block="es">Traslados para ejecutivos, clientes y equipos de trabajo dentro de Miami-Dade y Broward.</p>
+        <p data-lang-block="en">Rides for executives, clients and teams across Miami-Dade and Broward.</p>
+        <div class="svctag"><div class="amt" data-lang-block="es">Cotización</div><div class="amt" data-lang-block="en">Quote</div><div class="note" data-lang-block="es">Por WhatsApp</div><div class="note" data-lang-block="en">Via WhatsApp</div></div>
+      </div>
+      <div class="svcrow">
+        <h3 data-lang-block="es">Bodas y eventos</h3>
+        <h3 data-lang-block="en">Weddings and events</h3>
+        <p data-lang-block="es">Transporte para novios, familias e invitados, en SUV o van Sprinter.</p>
+        <p data-lang-block="en">Transportation for the couple, family and guests, in an SUV or Sprinter van.</p>
+        <div class="svctag"><div class="amt" data-lang-block="es">Cotización</div><div class="amt" data-lang-block="en">Quote</div><div class="note" data-lang-block="es">Por WhatsApp</div><div class="note" data-lang-block="en">Via WhatsApp</div></div>
+      </div>
+      <div class="svcrow">
+        <h3 data-lang-block="es">Otros destinos</h3>
+        <h3 data-lang-block="en">Other destinations</h3>
+        <p data-lang-block="es">Cualquier viaje en Miami-Dade y Broward que no esté en la lista de tarifas fijas.</p>
+        <p data-lang-block="en">Any trip in Miami-Dade and Broward that is not on the fixed-rate list.</p>
+        <div class="svctag"><div class="amt" data-lang-block="es">Cotización</div><div class="amt" data-lang-block="en">Quote</div><div class="note" data-lang-block="es">Por WhatsApp</div><div class="note" data-lang-block="en">Via WhatsApp</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="flota">
+  <div class="wrap">
+    <h2 class="section-title" style="color:var(--text)" data-lang-block="es">Nuestra flota</h2>
+    <h2 class="section-title" style="color:var(--text)" data-lang-block="en">Our fleet</h2>
+    <p style="margin:-24px 0 44px;max-width:520px;font-size:17px;line-height:1.6;color:var(--muted)" data-lang-block="es">Elija el vehículo según el tamaño de su grupo y su equipaje.</p>
+    <p style="margin:-24px 0 44px;max-width:520px;font-size:17px;line-height:1.6;color:var(--muted)" data-lang-block="en">Choose the vehicle that fits your group size and luggage.</p>
+
+    <div class="fleetgrid">
+      <div class="fleetcard">
+        <div class="photo"><img src="images/fleet-suburban.jpg" alt="Chevrolet Suburban negra"></div>
+        <h3>Suburban</h3>
+        <p data-lang-block="es">Espacio para familias y grupos con equipaje.</p>
+        <p data-lang-block="en">Room for families and groups with luggage.</p>
+      </div>
+      <div class="fleetcard">
+        <div class="photo"><img src="images/fleet-escalade.jpg" alt="Cadillac Escalade negra"></div>
+        <h3>Escalade</h3>
+        <p data-lang-block="es">Confort ejecutivo para traslados y ocasiones especiales.</p>
+        <p data-lang-block="en">Executive comfort for transfers and special occasions.</p>
+      </div>
+      <div class="fleetcard">
+        <div class="photo"><img src="images/fleet-sprinter.jpg" alt="Van Sprinter blanca"></div>
+        <h3 data-lang-block="es">Van Sprinter</h3>
+        <h3 data-lang-block="en">Sprinter Van</h3>
+        <p data-lang-block="es">La opción para grupos grandes, bodas y eventos.</p>
+        <p data-lang-block="en">The choice for large groups, weddings and events.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-cream" id="reservar">
+  <div class="wrap bookgrid">
+    <div class="bookintro">
+      <h2 data-lang-block="es">Reserve en un minuto</h2>
+      <h2 data-lang-block="en">Book in one minute</h2>
+      <p data-lang-block="es">Complete los datos y se abre WhatsApp con su solicitud lista para enviar. Le respondemos con la confirmación.</p>
+      <p data-lang-block="en">Fill in the details and WhatsApp opens with your request ready to send. We reply with your confirmation.</p>
+      <p class="walabel">WhatsApp</p>
+      <a class="wanum" href="https://wa.me/17863330709" target="_blank" rel="noopener">786-333-0709</a>
+      <p class="langnote" data-lang-block="es">Atendemos en español e inglés.</p>
+      <p class="langnote" data-lang-block="en">We speak English and Spanish.</p>
+    </div>
+
+    <div class="formcard">
+      <div>
+        <div class="flabel" data-lang-block="es">Tipo de servicio</div>
+        <div class="flabel" data-lang-block="en">Service type</div>
+        <div class="chiprow" id="grp-service"></div>
+      </div>
+
+      <div id="airport-fields" style="display:grid;grid-template-columns:1fr 1fr;gap:22px">
+        <div>
+          <div class="flabel" data-lang-block="es">Recogida</div>
+          <div class="flabel" data-lang-block="en">Pickup</div>
+          <div class="chiprow" id="grp-origin" style="flex-direction:column;align-items:stretch"></div>
+        </div>
+        <div>
+          <div class="flabel" data-lang-block="es">Destino</div>
+          <div class="flabel" data-lang-block="en">Destination</div>
+          <div class="chiprow" id="grp-dest" style="flex-direction:column;align-items:stretch"></div>
+        </div>
+      </div>
+
+      <div id="hourly-fields" style="display:none">
+        <div class="flabel" data-lang-block="es">Horas de servicio</div>
+        <div class="flabel" data-lang-block="en">Hours of service</div>
+        <div class="stepper">
+          <button type="button" class="stepbtn" id="hours-dec" aria-label="-1">−</button>
+          <div class="stepval" id="hours-val">3</div>
+          <button type="button" class="stepbtn" id="hours-inc" aria-label="+1">+</button>
+        </div>
+      </div>
+
+      <div class="twocol">
+        <div>
+          <label class="flabel" for="f-date" data-lang-block="es">Fecha</label>
+          <label class="flabel" for="f-date" data-lang-block="en">Date</label>
+          <input id="f-date" class="field" type="date">
+        </div>
+        <div>
+          <label class="flabel" for="f-time" data-lang-block="es">Hora</label>
+          <label class="flabel" for="f-time" data-lang-block="en">Time</label>
+          <input id="f-time" class="field" type="time">
+        </div>
+      </div>
+
+      <div class="twocol">
+        <div>
+          <div class="flabel" data-lang-block="es">Pasajeros</div>
+          <div class="flabel" data-lang-block="en">Passengers</div>
+          <div class="stepper">
+            <button type="button" class="stepbtn" id="pax-dec" aria-label="-1">−</button>
+            <div class="stepval" id="pax-val">2</div>
+            <button type="button" class="stepbtn" id="pax-inc" aria-label="+1">+</button>
+          </div>
+        </div>
+        <div>
+          <div class="flabel" data-lang-block="es">Vehículo</div>
+          <div class="flabel" data-lang-block="en">Vehicle</div>
+          <div class="chiprow" id="grp-vehicle"></div>
+        </div>
+      </div>
+
+      <div>
+        <label class="flabel" for="f-name" data-lang-block="es">Su nombre</label>
+        <label class="flabel" for="f-name" data-lang-block="en">Your name</label>
+        <input id="f-name" class="field" type="text" autocomplete="name">
+      </div>
+
+      <div>
+        <label class="flabel" for="f-notes" data-lang-block="es">Número de vuelo, dirección y notas</label>
+        <label class="flabel" for="f-notes" data-lang-block="en">Flight number, address and notes</label>
+        <textarea id="f-notes" class="field" rows="3"></textarea>
+      </div>
+
+      <div class="sumbox">
+        <div>
+          <div class="lbl" id="sum-label">Tarifa fija</div>
+          <div class="note" id="sum-note">Peajes incluidos</div>
+        </div>
+        <div class="amt" id="sum-amount">A cotizar</div>
+      </div>
+
+      <a class="btn btn-gold submitbtn" id="submit-btn" href="#" target="_blank" rel="noopener">
+        <span data-lang-block="es">Enviar por WhatsApp</span>
+        <span data-lang-block="en">Send on WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footgrid">
+    <div class="brand">
+      <div class="mono">BLC</div>
+      <div class="wordmark">Black Luxury Car LLC</div>
+    </div>
+    <div class="footinfo">
+      <div data-lang-block="es">Servicio en Miami-Dade y Broward County</div>
+      <div data-lang-block="en">Serving Miami-Dade and Broward County</div>
+      <div data-lang-block="es">Licencia y seguro: [N.º de licencia]</div>
+      <div data-lang-block="en">License and insurance: [License no.]</div>
+      <a href="https://wa.me/17863330709" target="_blank" rel="noopener" style="color:var(--text);font-weight:600">WhatsApp 786-333-0709</a>
+    </div>
+  </div>
+  <div class="wrap rights">
+    <span data-lang-block="es">© 2026 Black Luxury Car LLC. Todos los derechos reservados.</span>
+    <span data-lang-block="en">© 2026 Black Luxury Car LLC. All rights reserved.</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var FARES = { kb:{mia:90, fll:150}, bk:{mia:80, fll:140} };
+  var AIRPORTS = { mia:1, fll:1 };
+
+  var T = {
+    types: [
+      {v:'airport', es:'Aeropuerto', en:'Airport'},
+      {v:'hourly', es:'Por hora', en:'Hourly'},
+      {v:'wedding', es:'Boda o evento', en:'Wedding or event'},
+      {v:'corporate', es:'Corporativo', en:'Corporate'}
+    ],
+    zones: [
+      {v:'kb', es:'Key Biscayne', en:'Key Biscayne'},
+      {v:'bk', es:'Brickell y Miami', en:'Brickell & Miami'},
+      {v:'mia', es:'Aeropuerto de Miami (MIA)', en:'Miami Airport (MIA)'},
+      {v:'fll', es:'Aeropuerto de Fort Lauderdale (FLL)', en:'Fort Lauderdale Airport (FLL)'},
+      {v:'ot', es:'Otra zona / destino', en:'Other area / destination'}
+    ],
+    vehicles: [
+      {v:'any', es:'Sin preferencia', en:'No preference'},
+      {v:'suv', es:'Suburban', en:'Suburban'},
+      {v:'esc', es:'Escalade', en:'Escalade'},
+      {v:'van', es:'Van Sprinter', en:'Sprinter Van'}
+    ]
+  };
+
+  var state = { lang:'es', service:'airport', origin:'kb', dest:'mia', hours:3, pax:2, vehicle:'any' };
+
+  function label(list, v){ var it = list.filter(function(o){return o.v===v})[0]; return it ? it[state.lang] : v; }
+
+  function buildChips(containerId, list, stateKey, onPick){
+    var el = document.getElementById(containerId);
+    el.innerHTML = '';
+    list.forEach(function(o){
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'chip' + (state[stateKey]===o.v ? ' on' : '');
+      b.textContent = o[state.lang];
+      b.onclick = function(){ state[stateKey] = o.v; onPick && onPick(); render(); };
+      el.appendChild(b);
+    });
+  }
+
+  function computeFare(){
+    var zoneSide = null, airSide = null;
+    if (AIRPORTS[state.dest]) { airSide = state.dest; zoneSide = state.origin; }
+    else if (AIRPORTS[state.origin]) { airSide = state.origin; zoneSide = state.dest; }
+    if (zoneSide && airSide && FARES[zoneSide] && FARES[zoneSide][airSide] != null) {
+      return FARES[zoneSide][airSide];
+    }
+    return null;
+  }
+
+  function render(){
+    document.getElementById('airport-fields').style.display = state.service === 'airport' ? 'grid' : 'none';
+    document.getElementById('hourly-fields').style.display = state.service === 'hourly' ? 'block' : 'none';
+
+    buildChips('grp-service', T.types, 'service');
+    buildChips('grp-origin', T.zones, 'origin');
+    buildChips('grp-dest', T.zones, 'dest');
+    buildChips('grp-vehicle', T.vehicles, 'vehicle');
+
+    document.getElementById('hours-val').textContent = state.hours;
+    document.getElementById('pax-val').textContent = state.pax;
+
+    var amount, note, sumLabel;
+    var L = state.lang;
+    if (state.service === 'airport') {
+      var fare = computeFare();
+      if (fare != null) {
+        amount = '$' + fare;
+        note = L==='es' ? 'Peajes incluidos' : 'Tolls included';
+        sumLabel = L==='es' ? 'Tarifa fija' : 'Fixed rate';
+      } else {
+        amount = L==='es' ? 'A cotizar' : 'Quote';
+        note = L==='es' ? 'Le enviamos el precio por WhatsApp' : 'We send the price on WhatsApp';
+        sumLabel = L==='es' ? 'Cotización' : 'Quote';
+      }
+    } else if (state.service === 'hourly') {
+      amount = '$' + (80 * state.hours);
+      note = '$80 × ' + state.hours + ' ' + (L==='es' ? 'horas' : 'hours');
+      sumLabel = L==='es' ? 'Total estimado' : 'Estimated total';
+    } else {
+      amount = L==='es' ? 'A cotizar' : 'Quote';
+      note = L==='es' ? 'Le enviamos el precio por WhatsApp' : 'We send the price on WhatsApp';
+      sumLabel = L==='es' ? 'Cotización' : 'Quote';
+    }
+    document.getElementById('sum-amount').textContent = amount;
+    document.getElementById('sum-note').textContent = note;
+    document.getElementById('sum-label').textContent = sumLabel;
+
+    buildWaLink(amount);
+  }
+
+  function buildWaLink(amount){
+    var L = state.lang;
+    var lines = [];
+    lines.push(L==='es' ? 'Hola, quisiera reservar un servicio con Black Luxury Car.' : 'Hello, I would like to book a service with Black Luxury Car.');
+    lines.push('');
+    lines.push((L==='es'?'Tipo de servicio':'Service type') + ': ' + label(T.types, state.service));
+    if (state.service === 'airport') {
+      lines.push((L==='es'?'Recogida':'Pickup') + ': ' + label(T.zones, state.origin));
+      lines.push((L==='es'?'Destino':'Destination') + ': ' + label(T.zones, state.dest));
+    }
+    if (state.service === 'hourly') {
+      lines.push((L==='es'?'Horas':'Hours') + ': ' + state.hours);
+    }
+    var d = document.getElementById('f-date').value;
+    var t = document.getElementById('f-time').value;
+    if (d) lines.push((L==='es'?'Fecha':'Date') + ': ' + d);
+    if (t) lines.push((L==='es'?'Hora':'Time') + ': ' + t);
+    lines.push((L==='es'?'Pasajeros':'Passengers') + ': ' + state.pax);
+    lines.push((L==='es'?'Vehículo':'Vehicle') + ': ' + label(T.vehicles, state.vehicle));
+    var name = document.getElementById('f-name').value;
+    var notes = document.getElementById('f-notes').value;
+    if (name) lines.push((L==='es'?'Nombre':'Name') + ': ' + name);
+    if (notes) lines.push((L==='es'?'Notas':'Notes') + ': ' + notes);
+    lines.push((L==='es'?'Tarifa':'Rate') + ': ' + amount);
+    var url = 'https://wa.me/17863330709?text=' + encodeURIComponent(lines.join('\n'));
+    document.getElementById('submit-btn').setAttribute('href', url);
+  }
+
+  ['f-date','f-time','f-name','f-notes'].forEach(function(id){
+    document.getElementById(id).addEventListener('input', function(){ buildWaLink(document.getElementById('sum-amount').textContent); });
+  });
+
+  document.getElementById('hours-dec').onclick = function(){ state.hours = Math.max(3, state.hours-1); render(); };
+  document.getElementById('hours-inc').onclick = function(){ state.hours = Math.min(12, state.hours+1); render(); };
+  document.getElementById('pax-dec').onclick = function(){ state.pax = Math.max(1, state.pax-1); render(); };
+  document.getElementById('pax-inc').onclick = function(){ state.pax = Math.min(14, state.pax+1); render(); };
+
+  window.setLang = function(lang){
+    state.lang = lang;
+    document.documentElement.setAttribute('data-lang', lang);
+    document.getElementById('btn-es').setAttribute('aria-pressed', lang === 'es');
+    document.getElementById('btn-en').setAttribute('aria-pressed', lang === 'en');
+    try { localStorage.setItem('blc-lang', lang); } catch(e){}
+    render();
+  };
+
+  var saved = null;
+  try { saved = localStorage.getItem('blc-lang'); } catch(e){}
+  if (saved === 'en') { window.setLang('en'); } else { render(); }
+})();
+</script>
+</body>
+</html>

@@ -197,7 +197,7 @@
       </div>
       <div class="fareline">
         <div><div class="from" data-lang-block="es">Servicio por hora</div><div class="from" data-lang-block="en">Hourly service</div><div class="to" data-lang-block="es">Mínimo 3 horas</div><div class="to" data-lang-block="en">3-hour minimum</div></div>
-        <div class="fareprice">$90/h</div>
+        <div class="fareprice">$80/h</div>
       </div>
       <p class="foot-note" data-lang-block="es">¿Otro destino? Pida su cotización por WhatsApp.</p>
       <p class="foot-note" data-lang-block="en">Another destination? Ask for a quote on WhatsApp.</p>
@@ -234,7 +234,7 @@
         <h3 data-lang-block="en">Hourly service</h3>
         <p data-lang-block="es">Chofer y vehículo a su disposición para reuniones, compras, cenas o recorridos.</p>
         <p data-lang-block="en">A driver and vehicle at your disposal for meetings, shopping, dinners or sightseeing.</p>
-        <div class="svctag"><div class="amt">$90/h</div><div class="note" data-lang-block="es">Mínimo 3 horas</div><div class="note" data-lang-block="en">3-hour minimum</div></div>
+        <div class="svctag"><div class="amt">$80/h</div><div class="note" data-lang-block="es">Mínimo 3 horas</div><div class="note" data-lang-block="en">3-hour minimum</div></div>
       </div>
       <div class="svcrow">
         <h3 data-lang-block="es">Ejecutivos y corporativo</h3>
@@ -493,8 +493,8 @@
         sumLabel = L==='es' ? 'Cotización' : 'Quote';
       }
     } else if (state.service === 'hourly') {
-      amount = '$' + (90 * state.hours);
-      note = '$90 × ' + state.hours + ' ' + (L==='es' ? 'horas' : 'hours');
+      amount = '$' + (80 * state.hours);
+      note = '$80 × ' + state.hours + ' ' + (L==='es' ? 'horas' : 'hours');
       sumLabel = L==='es' ? 'Total estimado' : 'Estimated total';
     } else {
       amount = L==='es' ? 'A cotizar' : 'Quote';

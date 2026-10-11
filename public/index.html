@@ -340,8 +340,8 @@
       <h2 class="sec-title" data-lang-block="es">Nuestra flota</h2>
       <h2 class="sec-title" data-lang-block="en">Our fleet</h2>
       <div class="speed" aria-hidden="true"><i></i><i></i><i></i></div>
-      <p class="sec-intro" data-lang-block="es">Elija el vehículo según el tamaño de su grupo y su equipaje.</p>
-      <p class="sec-intro" data-lang-block="en">Choose the vehicle that fits your group size and luggage.</p>
+      <p class="sec-intro" data-lang-block="es">Asignamos el vehículo según el tamaño de su grupo y su equipaje.</p>
+      <p class="sec-intro" data-lang-block="en">We match the vehicle to your group size and luggage.</p>
     </div>
 
     <div class="fleetgrid">
@@ -425,20 +425,13 @@
         </div>
       </div>
 
-      <div class="twocol">
-        <div>
-          <div class="flabel" data-lang-block="es">Pasajeros</div>
-          <div class="flabel" data-lang-block="en">Passengers</div>
-          <div class="stepper">
-            <button type="button" class="stepbtn" id="pax-dec" aria-label="-1">−</button>
-            <div class="stepval" id="pax-val">2</div>
-            <button type="button" class="stepbtn" id="pax-inc" aria-label="+1">+</button>
-          </div>
-        </div>
-        <div>
-          <div class="flabel" data-lang-block="es">Vehículo</div>
-          <div class="flabel" data-lang-block="en">Vehicle</div>
-          <div class="chiprow" id="grp-vehicle"></div>
+      <div>
+        <div class="flabel" data-lang-block="es">Pasajeros</div>
+        <div class="flabel" data-lang-block="en">Passengers</div>
+        <div class="stepper">
+          <button type="button" class="stepbtn" id="pax-dec" aria-label="-1">−</button>
+          <div class="stepval" id="pax-val">2</div>
+          <button type="button" class="stepbtn" id="pax-inc" aria-label="+1">+</button>
         </div>
       </div>
 
@@ -547,16 +540,10 @@
       {v:'mia', es:'Aeropuerto de Miami (MIA)', en:'Miami Airport (MIA)'},
       {v:'fll', es:'Aeropuerto de Fort Lauderdale (FLL)', en:'Fort Lauderdale Airport (FLL)'},
       {v:'ot', es:'Otra zona / destino', en:'Other area / destination'}
-    ],
-    vehicles: [
-      {v:'any', es:'Sin preferencia', en:'No preference'},
-      {v:'suv', es:'Suburban', en:'Suburban'},
-      {v:'esc', es:'Escalade', en:'Escalade'},
-      {v:'van', es:'Van Sprinter', en:'Sprinter Van'}
     ]
   };
 
-  var state = { lang:'es', service:'airport', origin:'kb', dest:'mia', hours:3, pax:2, vehicle:'any' };
+  var state = { lang:'es', service:'airport', origin:'kb', dest:'mia', hours:3, pax:2 };
 
   function label(list, v){ var it = list.filter(function(o){return o.v===v})[0]; return it ? it[state.lang] : v; }
 
@@ -591,7 +578,6 @@
     buildChips('grp-service', T.types, 'service');
     buildChips('grp-origin', T.zones, 'origin');
     buildChips('grp-dest', T.zones, 'dest');
-    buildChips('grp-vehicle', T.vehicles, 'vehicle');
 
     document.getElementById('hours-val').textContent = state.hours;
     document.getElementById('pax-val').textContent = state.pax;
@@ -644,7 +630,6 @@
     if (d) lines.push((L==='es'?'Fecha':'Date') + ': ' + d);
     if (t) lines.push((L==='es'?'Hora':'Time') + ': ' + t);
     lines.push((L==='es'?'Pasajeros':'Passengers') + ': ' + state.pax);
-    lines.push((L==='es'?'Vehículo':'Vehicle') + ': ' + label(T.vehicles, state.vehicle));
     var name = document.getElementById('f-name').value;
     var notes = document.getElementById('f-notes').value;
     if (name) lines.push((L==='es'?'Nombre':'Name') + ': ' + name);

@@ -105,7 +105,7 @@
   .svctag .note{font-size:14px;color:var(--muted);margin-top:3px}
 
   /* Fleet */
-  .fleetgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  .fleetgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
   .fleetcard .photo{aspect-ratio:4/5;border-radius:14px;overflow:hidden;background:var(--sand)}
   .fleetcard .photo img{width:100%;height:100%;object-fit:cover}
   .fleetcard h3{margin:20px 0 6px;font-size:26px}
@@ -158,13 +158,14 @@
     .rategrid,.bookgrid{grid-template-columns:1fr;gap:40px}
     .svcrow{grid-template-columns:1fr;row-gap:8px}
     .svctag{text-align:left}
-    .fleetgrid{grid-template-columns:1fr}
+    .fleetgrid{grid-template-columns:1fr 1fr}
     .fleetcard .photo{aspect-ratio:4/3}
     .trustgrid{grid-template-columns:1fr 1fr}
     .trustgrid > div:nth-child(odd){border-left:none}
     .sec{padding:68px 0}
   }
   @media (max-width:560px){
+    .fleetgrid{grid-template-columns:1fr}
     .headrow .btn{display:none}
     .wordmark{font-size:22px}
     .minirates{grid-template-columns:1fr 1fr;padding:18px}
@@ -319,8 +320,8 @@
       <div class="svcrow">
         <h3 data-lang-block="es">Bodas y eventos</h3>
         <h3 data-lang-block="en">Weddings and events</h3>
-        <p data-lang-block="es">Transporte para novios, familias e invitados, en SUV o van Sprinter.</p>
-        <p data-lang-block="en">Transportation for the couple, family and guests, in an SUV or Sprinter van.</p>
+        <p data-lang-block="es">Transporte para novios, familias e invitados, en SUV, van Sprinter o bus.</p>
+        <p data-lang-block="en">Transportation for the couple, family and guests, in an SUV, Sprinter van or bus.</p>
         <div class="svctag"><div class="amt" data-lang-block="es">Cotización</div><div class="amt" data-lang-block="en">Quote</div><div class="note" data-lang-block="es">Por WhatsApp</div><div class="note" data-lang-block="en">Via WhatsApp</div></div>
       </div>
       <div class="svcrow">
@@ -361,8 +362,14 @@
         <div class="photo"><img src="images/fleet-sprinter.jpg" alt="Van Sprinter blanca" loading="lazy"></div>
         <h3 data-lang-block="es">Van Sprinter</h3>
         <h3 data-lang-block="en">Sprinter Van</h3>
-        <p data-lang-block="es">La opción para grupos grandes, bodas y eventos.</p>
-        <p data-lang-block="en">The choice for large groups, weddings and events.</p>
+        <p data-lang-block="es">Para grupos medianos, bodas y eventos.</p>
+        <p data-lang-block="en">For mid-size groups, weddings and events.</p>
+      </div>
+      <div class="fleetcard">
+        <div class="photo"><img src="images/fleet-bus.jpg" alt="Bus blanco de pasajeros" loading="lazy"></div>
+        <h3>Bus</h3>
+        <p data-lang-block="es">Para grupos grandes, excursiones y eventos corporativos.</p>
+        <p data-lang-block="en">For large groups, tours and corporate events.</p>
       </div>
     </div>
   </div>
@@ -646,7 +653,7 @@
   document.getElementById('hours-dec').onclick = function(){ state.hours = Math.max(3, state.hours-1); render(); };
   document.getElementById('hours-inc').onclick = function(){ state.hours = Math.min(12, state.hours+1); render(); };
   document.getElementById('pax-dec').onclick = function(){ state.pax = Math.max(1, state.pax-1); render(); };
-  document.getElementById('pax-inc').onclick = function(){ state.pax = Math.min(14, state.pax+1); render(); };
+  document.getElementById('pax-inc').onclick = function(){ state.pax = Math.min(60, state.pax+1); render(); };
 
   window.setLang = function(lang){
     state.lang = lang;
